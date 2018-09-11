@@ -131,10 +131,9 @@ a[data-toggle="collapse"] {
 }
 
 #sidebarCollapseMenu {
-    width: 40px;
-    height: 40px;
     margin: 0 auto;
     background: #f5f5f5;
+    width: 75%;
 }
 
 #sidebarCollapseMenu span {
@@ -144,6 +143,25 @@ a[data-toggle="collapse"] {
     display: block;
     background: #555;
     transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+}
+
+.bar1, .bar2, .bar3 {
+    height: 5px;
+    background-color: #333;
+    margin: 6px auto;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .main-content {
@@ -165,6 +183,13 @@ a[data-toggle="collapse"] {
     background-size: cover;
     background-blend-mode: color;
     border-radius: 0px;
+    position: relative;
+}
+
+.gif-header button {
+    position: absolute;
+    top: 6px;
+    right: 12px;
 }
 
 .gif-instructions {
@@ -184,6 +209,10 @@ a[data-toggle="collapse"] {
 
 .gif-col {
     margin-bottom: 8px;
+}
+
+.card-columns {
+    column-count: 6;
 }
 
 .gif-container {
@@ -233,6 +262,7 @@ a[data-toggle="collapse"] {
     background-color: rgba(255,255,255,0.35);
     border-color: rgb(255, 255, 255);
 }
+
 
 .load-more-section {
     margin-top: 32px;

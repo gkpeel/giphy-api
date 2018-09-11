@@ -28,27 +28,21 @@
             <div class="sidebar-container">
                 <div id="sidebar-header" class="sidebar-header">
                     <h3>Menu</h3>
-                    <div id="sidebarCollapseMenu" class="navbar-btn">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                    <div id="sidebarCollapseMenu" class="navbar-btn btn">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
                     </div>
                 </div>
                 <div class="icons-container">
                     <div class="" id="animals-list">
                     </div>
                 </div>
-                <!-- <ul class="list-unstyled components" id="animals-list"> -->
-                    
-
-
-
-
-                </ul>
             </div>
         </nav>
         <div class="main-content">
             <div class="jumbotron gif-header">
+                <button class="btn btn-sm favorites" data-toggle="modal" data-target="#favoritesModal">Favorites</button>
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -80,6 +74,30 @@
                     </div>
                 </div>
             </footer>
+
+            <div class="modal fade" id="favoritesModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row" id="favBody">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 

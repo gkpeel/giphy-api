@@ -178,9 +178,12 @@ $(document).ready(function () {
     // Add to favorites
     $(document).on("click", "#gif-body .card .favorite", function() {
         $(this).toggleClass('added');
-        var favImg = $(this).siblings(".card-img");
-        favImgArray.push(favImg);
-        console.log(favImgArray);
+        var favImg = $(this).clone().siblings(".card-img");
+        var favDisplay = $('<div class="col-3 fav-gif">');
+        favDisplay.append(favImg);
+        console.log(favDisplay);
+        $("#favBody").append(favDisplay);
+        // console.log(favDisplay);
 
     });
 
