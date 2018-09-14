@@ -79,7 +79,7 @@ function inputFormat(string) {
 }
 
 function buildQuery(queryString, gifLimit, gifOffset) {
-    var retval = 'http://api.giphy.com/v1/gifs/search?q='+queryString+'&api_key=f0r4tctLW7KiDa2jKEuOa9uz5xnCR2xQ&limit='+gifLimit+'&offset='+gifOffset;
+    var retval = 'https://api.giphy.com/v1/gifs/search?q='+queryString+'&api_key=f0r4tctLW7KiDa2jKEuOa9uz5xnCR2xQ&limit='+gifLimit+'&offset='+gifOffset;
     return retval;
 }
 
